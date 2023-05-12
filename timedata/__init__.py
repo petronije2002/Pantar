@@ -40,8 +40,9 @@ def main(mytimer: func.TimerRequest) -> None:
 
     #client_id = "1b386e04-fbf4-48b5-843b-1b76a209d472" #this is the testing one client_id to testing env
 
-    client_id = "27a2f377-2e2e-402c-ad77-133e1f1dfde1" # this is the working one
-    client_secret = "162d4d81-d49e-465a-bc21-4aad650df068"
+    client_id = os.environ["client_id"]  # this is the working one
+    client_secret = os.environ["client_secret"]
+    
     data_ = []
 
 
